@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index - </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background-color: rgb(254, 218, 205)
+        }
+
+        header {
+            background-color: rgb(243, 177, 78);
+            height: 100px;
+            font-family: cursive;
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        nav {
+            height: 30px;
+            background-color: rgb(240, 197, 132);
+            padding-top: 10px;
+            position:sticky;
+            top: 0;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            display: inline;
+            padding: 14px 16px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: blue;
+            font-size: 20px;
+        }
+
+        #aboutparent {
+            display: flex;
+            
+        }
+
+        .imgclass {
+            flex: 10;
+            margin: 5px;
+            border: 2px solid gold;
+        }
+
+        .desc {
+            padding: 10px;
+            font-family: monospace;
+            font-size: 20px;
+            background-color: rgb(243, 138, 62);
+        }
+
+        #servicesparent {
+            display: flex;
+        }
+
+        .service {
+            flex: 10;
+            margin: 5px;
+            border: 2px solid gold;
+        }
+
+        #galleryparent {
+            display: flex;
+        }
+
+        .galleryimg {
+            flex: 10;
+            margin: 5px;
+        }
+
+        #contactparent {
+            display: flex;
+            
+        }
+
+        .contactmap {
+            flex: 50%;
+        }
+
+        .contactform {
+            flex: 50%;
+        }
+        table,td{
+            margin: auto;
+            padding: 10px;
+            font-family: sans-serif;
+            
+        }
+        footer{
+            background-color: rgb(103, 101, 101);
+            height: 60px;
+            text-align: center;
+            padding-top: 20px;
+            color: wheat;
+        }
+        footer a{
+            color: rgb(243, 108, 41);
+        }
+
+        @media (max-width:800px) {
+            #aboutparent,#servicesparent,#galleryparent,#contactparent{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Natures Vibe</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contactus">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!-- Banner start -->
+    <section>
+        <img src="assets/images/banner.jpg" width="100%" height="400px" alt="">
+    </section>
+    <!-- Banner End -->
+
+    <!-- About US start -->
+    <section id="aboutus"><br><br>
+        <h1 style="text-align: center;">About Us</h1>
+        <section id="aboutparent">
+            <div class="imgclass">
+                <img src="assets/images/sunset.jpg" width="100%" height="350px" alt="">
+                <div class="desc">
+                    <h2 style="text-align: center;">Sunset</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et animi quis fugit voluptas saepe, odio
+                        ipsam ex pariatur nam iusto eaque quas praesentium ipsum numquam iste veritatis. Obcaecati,
+                        eaque culpa!</p>
+                </div>
+            </div>
+            <div class="imgclass">
+                <img src="assets/images/cloud.jpg" width="100%" height="350px" alt="">
+                <div class="desc">
+                    <h2 style="text-align: center;">Clouds</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et animi quis fugit voluptas saepe, odio
+                        ipsam ex pariatur nam iusto eaque quas praesentium ipsum numquam iste veritatis. Obcaecati,
+                        eaque culpa!</p>
+                </div>
+            </div>
+            <div class="imgclass">
+                <img src="assets/images/river.jpg" width="100%" height="350px" alt="">
+                <div class="desc">
+                    <h2 style="text-align: center;">River</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et animi quis fugit voluptas saepe, odio
+                        ipsam ex pariatur nam iusto eaque quas praesentium ipsum numquam iste veritatis. Obcaecati,
+                        eaque culpa!</p>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- About US End -->
+
+    <!-- Services start -->
+    <section id="services"><br><br>
+        <h1 style="text-align: center;">Services</h1>
+        <section id="servicesparent">
+            <div class="service">
+                <img src="assets/images/resort1.jpg" width="100%" height="350px" alt="">
+                <div class="desc">
+                    <h2 style="text-align: center;">Beach Resort</h2>
+                    <h3 style="text-align: center;"> 2 days 1 night at Rs 1799/- pp </h3>
+                    <h4 style="text-align: center;">Package Includes </h4>
+                    <hr>
+                    <ol>
+                        <li>1 Night Stay</li>
+                        <li>3 Meals</li>
+                        <li>5 Events</li>
+                        <li>4 Activities</li>
+                        <li>4 Sight Seeing</li>
+                    </ol>
+                </div>
+
+            </div>
+            <div class="service">
+                <img src="assets/images/resort2.jpg" width="100%" height="350px" alt="">
+                <div class="desc">
+                    <h2 style="text-align: center;">Beach Resort</h2>
+                    <h3 style="text-align: center;"> 2 days 1 night at Rs 1799/- pp </h3>
+                    <h4 style="text-align: center;">Package Includes </h4>
+                    <hr>
+                    <ol>
+                        <li>1 Night Stay</li>
+                        <li>3 Meals</li>
+                        <li>5 Events</li>
+                        <li>4 Activities</li>
+                        <li>4 Sight Seeing</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="service">
+                <img src="assets/images/resort3.jpg" width="100%" height="350px" alt="">
+                <div class="desc">
+                    <h2 style="text-align: center;">Beach Resort</h2>
+                    <h3 style="text-align: center;"> 2 days 1 night at Rs 1799/- pp </h3>
+                    <h4 style="text-align: center;">Package Includes </h4>
+                    <hr>
+                    <ol>
+                        <li>1 Night Stay</li>
+                        <li>3 Meals</li>
+                        <li>5 Events</li>
+                        <li>4 Activities</li>
+                        <li>4 Sight Seeing</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- Services End -->
+
+    <!-- Gallery start -->
+    <section id="gallery"><br><br>
+        <h1 style="text-align: center;">Gallery</h1>
+        <section id="galleryparent">
+            <div class="galleryimg">
+                <img src="assets/images/animal1.jpg" width="100%" height="500px" alt="">
+            </div>
+            <div class="galleryimg">
+                <img src="assets/images/animal2.jpg" width="100%" height="500px" alt="">
+            </div>
+            <div class="galleryimg">
+                <img src="assets/images/animal3.jpg" width="100%" height="500px" alt="">
+            </div>
+            <div class="galleryimg">
+                <img src="assets/images/animal4.jpg" width="100%" height="500px" alt="">
+            </div>
+
+        </section>
+    </section>
+    <!-- Gallery end -->
+
+    <!-- Contact Start -->
+    <section id="contactus"> <br><br>
+        <h1 style="text-align: center;">Contact Us</h1>
+        <section id="contactparent">
+            <div class="contactmap">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15398.32111646183!2d74.61728190000001!3d15.236118800000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbf2013bd84cb99%3A0x44a7efeb332459ef!2sOld%20Dandeli%2C%20Dandeli%2C%20Karnataka%20581325!5e0!3m2!1sen!2sin!4v1681286162096!5m2!1sen!2sin"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contactform">
+                <form>
+                    <h1 style="text-align: center;">Contact Here</h1>
+                    <hr>
+                    <table>
+                        <tr>
+                            <td><label>First Name :</label></td>
+                            <td><input type="text" placeholder="First Name"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Last Name :</label></td>
+                            <td><input type="text" placeholder="Last Name"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Mobile No :</label></td>
+                            <td><input type="text" placeholder="Mobile No"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Gender :</label></td>
+                            <td><label><input type="radio"> Male </label>
+                                <label><input type="radio"> Female </label>
+                                <label><input type="radio"> Other </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Address :</label></td>
+                            <td><textarea rows="5" placeholder="Enter Detail Address"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit">
+                                <input type="reset">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </section>
+    </section>
+    <!-- Contact end -->
+
+    <footer>
+        <h4>Designed & Developed by <b><a href="#">Shrinivas Sankpal</a></b></h4>
+    </footer>
+</body>
+
+</html>
